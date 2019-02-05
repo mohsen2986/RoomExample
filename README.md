@@ -38,7 +38,7 @@ You need to be solidly familiar with the Java programming language, object-orien
 
 - **Threading and AsyncTask.**
 
-This codelab is focused on Android Architecture 'Components'. Off-topic concepts and code are provided for you to simply copy and paste.
+This codelab is focused on Android Architecture Components. Off-topic concepts and code are provided for you to simply copy and paste.
 
 This codelab provides all the code you need to build the complete app.
 
