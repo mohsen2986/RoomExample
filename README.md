@@ -15,13 +15,13 @@ There are a lot of steps to using the Architecture Components and implementing t
 
 for lear this toturial you must know these knowledge :
 
-**RecyclerView and adapters.**
+- **RecyclerView and adapters.**
 
 
-**SQLite database and the SQLite query language.**
+- **SQLite database and the SQLite query language.**
 
 
-**Threading and AsyncTask.**
+- **Threading and AsyncTask.**
 
 
 
