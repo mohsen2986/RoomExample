@@ -22,23 +22,24 @@ In this codelab you build an app that does the following:
 </table>
 
 ## What you'll learn
-**How to design and construct an app using the Architecture Components Room and Lifecycles libraries.**
+> **How to design and construct an app using the Architecture Components Room and Lifecycles libraries.**
 
 There are a lot of steps to using the Architecture Components and implementing the recommended architecture. The most important thing is to create a mental model of what is going on, and understand how the pieces fit together and how the data flows. As you work through this codelab, don't just copy and paste the code, but try to start building that inner understanding.
 
+## What you'll need
+- Android Studio 3.0 or later and knowledge of how to use it. Make sure Android Studio is updated, as well as your SDK and Gradle. Otherwise, you may have to wait until all the updates are done.
 
-for lear this toturial you must know these knowledge :
+- An Android device or emulator.
 
+You need to be solidly familiar with the Java programming language, object-oriented design concepts, and Android Development Fundamentals. In particular:
 - **RecyclerView and adapters.**
-
 
 - **SQLite database and the SQLite query language.**
 
-
 - **Threading and AsyncTask.**
 
+This codelab is focused on Android Architecture 'Components'. Off-topic concepts and code are provided for you to simply copy and paste.
 
-
-
+This codelab provides all the code you need to build the complete app.
 
 ![alt text](https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/3840395bfb3980b8.png)
