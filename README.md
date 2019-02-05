@@ -12,11 +12,14 @@ In this codelab you build an app that does the following:
 - Displays all the words in a RecyclerView in MainActivity.
 - Opens a second activity when the user taps the + button. When the user enters a word, adds the word to the database and the list.
 
+<p align="center">
+  <img src="https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/2a518dec65b5b3dd.png" width="350" title="hover text">
+  <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text">
+</p>
 ![](https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/2a518dec65b5b3dd.png | width=100)
 ![alt text](https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/ba2d72cea775f744.png)
 ![alt text](https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/ee5319926f0482eb.png)
 
-![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png =250x250)
 ## What you'll learn
 **How to design and construct an app using the Architecture Components Room and Lifecycles libraries.**
 
