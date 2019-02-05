@@ -7,7 +7,7 @@ RecyclerView and adapters
 SQLite database and the SQLite query language
 Threading and AsyncTask
 
-**What we will build**
+## What we will build
 
 You will build an app that uses Android Architecture Components and implements the architecture from Guide to App Architecture for these components. The sample app stores a list of words in a Room database and displays it in a RecyclerView. The app is bare bones but sufficiently complex that you can use it as a template to build upon.
 
