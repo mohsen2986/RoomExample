@@ -7,6 +7,14 @@ this is a toturial for Room library and this Architecture
 
 You will build an app that uses Android Architecture Components and implements the architecture from Guide to App Architecture for these components. The sample app stores a list of words in a Room database and displays it in a RecyclerView. The app is bare bones but sufficiently complex that you can use it as a template to build upon.
 
+In this codelab you build an app that does the following:
+- Works with a database to get and save the data, and pre-populates the database with some words.
+- Displays all the words in a RecyclerView in MainActivity.
+- Opens a second activity when the user taps the + button. When the user enters a word, adds the word to the database and the list.
+
+![alt text](https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/2a518dec65b5b3dd.png)
+![alt text](https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/ba2d72cea775f744.png)
+![alt text](https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/ee5319926f0482eb.png)
 ## What you'll learn
 **How to design and construct an app using the Architecture Components Room and Lifecycles libraries.**
 
