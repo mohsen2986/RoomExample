@@ -16,9 +16,16 @@ In this codelab you build an app that does the following:
   <img src="https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/2a518dec65b5b3dd.png" width="350" title="hover text">
   <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text">
 </p>
-![](https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/2a518dec65b5b3dd.png | width=100)
 ![alt text](https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/ba2d72cea775f744.png)
 ![alt text](https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/ee5319926f0482eb.png)
+
+<table>
+<tbody><tr><td colspan="1" rowspan="1"><p><img style="max-width: 194.00px" src="https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/2a518dec65b5b3dd.png"></p>
+</td><td colspan="1" rowspan="1"><p><img style="max-width: 194.00px" src="https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/ba2d72cea775f744.png"></p>
+</td><td colspan="1" rowspan="1"><p><img style="max-width: 194.00px" src="https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/ee5319926f0482eb.png"></p>
+</td></tr>
+</tbody>
+</table>
 
 ## What you'll learn
 **How to design and construct an app using the Architecture Components Room and Lifecycles libraries.**
