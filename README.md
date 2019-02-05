@@ -12,12 +12,6 @@ In this codelab you build an app that does the following:
 - Displays all the words in a RecyclerView in MainActivity.
 - Opens a second activity when the user taps the + button. When the user enters a word, adds the word to the database and the list.
 
-<p align="center">
-  <img src="https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/2a518dec65b5b3dd.png" width="350" title="hover text">
-  <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text">
-</p>
-![alt text](https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/ba2d72cea775f744.png)
-![alt text](https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/ee5319926f0482eb.png)
 
 <table>
 <tbody><tr><td colspan="1" rowspan="1"><p><img style="max-width: 194.00px" src="https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/2a518dec65b5b3dd.png"></p>
