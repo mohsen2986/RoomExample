@@ -1,11 +1,11 @@
 # RoomExample
 this is a toturial for Room library and this Architecture
 
-for lear this toturial you must know these knowledge
+for lear this toturial you must know these knowledge :
 
-RecyclerView and adapters
-SQLite database and the SQLite query language
-Threading and AsyncTask
+RecyclerView and adapters.
+SQLite database and the SQLite query language.
+Threading and AsyncTask.
 
 ## What we will build
 
