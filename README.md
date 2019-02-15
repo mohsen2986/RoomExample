@@ -46,4 +46,16 @@ This codelab provides all the code you need to build the complete app.
 
 ## Create your app
 
+-Call the app RoomWordSample
+-Target SDK 26+
+-Uncheck both, include Kotlin support and include C++ support.
+-Check Phone & Tablet form factor only and minimum SDK API 26.
+-Choose the Basic Activity.
+
+## Update gradle files
+
+You have to add the component libraries to your gradle files.
+
+Add the following code to your build.gradle (Module: app) file, at the end of the dependencies block.
+
 
