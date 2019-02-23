@@ -58,4 +58,26 @@ You have to add the component libraries to your gradle files.
 
 Add the following code to your build.gradle (Module: app) file, at the end of the dependencies block.
 
+```
+// Room components
+implementation "android.arch.persistence.room:runtime:$rootProject.roomVersion"
+annotationProcessor "android.arch.persistence.room:compiler:$rootProject.roomVersion"
+androidTestImplementation "android.arch.persistence.room:testing:$rootProject.roomVersion"
+
+// Lifecycle components
+implementation "android.arch.lifecycle:extensions:$rootProject.archLifecycleVersion"
+annotationProcessor "android.arch.lifecycle:compiler:$rootProject.archLifecycleVersion"
+
+```
+In your build.gradle (Project: RoomWordsSample) file, add the version numbers to the end of the file, as given in the code below.
+> Get the most current version numbers from the Adding Components to Your Project page.
+
+```
+ext {
+   roomVersion = '1.1.1'
+   archLifecycleVersion = '1.1.1'
+}
+```
+
+
 
