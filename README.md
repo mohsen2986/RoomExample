@@ -72,7 +72,7 @@ annotationProcessor "android.arch.lifecycle:compiler:$rootProject.archLifecycleV
 In your build.gradle (Project: RoomWordsSample) file, add the version numbers to the end of the file, as given in the code below.
 > Get the most current version numbers from the Adding Components to Your Project page.
 
-```
+```gradle
 ext {
    roomVersion = '1.1.1'
    archLifecycleVersion = '1.1.1'
