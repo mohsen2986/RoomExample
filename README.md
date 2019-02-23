@@ -79,5 +79,9 @@ ext {
 }
 ```
 
+## Create the entity
+
+The data for this app is words, and each ` word ` is an Entity. Create a class called Word that describes a word Entity. You need a constructor and a "getter" method for the data model class, because that's how `Room` knows to instantiate your objects.
+
 
 
