@@ -58,7 +58,7 @@ You have to add the component libraries to your gradle files.
 
 Add the following code to your build.gradle (Module: app) file, at the end of the dependencies block.
 
-```
+```gradle
 // Room components
 implementation "android.arch.persistence.room:runtime:$rootProject.roomVersion"
 annotationProcessor "android.arch.persistence.room:compiler:$rootProject.roomVersion"
@@ -84,6 +84,7 @@ ext {
 The data for this app is words, and each ` word ` is an Entity. Create a class called Word that describes a word Entity. You need a constructor and a "getter" method for the data model class, because that's how `Room` knows to instantiate your objects.
 
 ![alt text](https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/4286f79b23797413.png)
+
 Here is the code:
 ```
 public class Word {
