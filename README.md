@@ -83,5 +83,56 @@ ext {
 
 The data for this app is words, and each ` word ` is an Entity. Create a class called Word that describes a word Entity. You need a constructor and a "getter" method for the data model class, because that's how `Room` knows to instantiate your objects.
 
+![alt text](https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/4286f79b23797413.png)
+Here is the code:
+```
+public class Word {
 
+   private String mWord;
 
+   public Word(@NonNull String word) {this.mWord = word;}
+
+   public String getWord(){return this.mWord;}
+}
+```
+To make the `Word` class meaningful to a Room database, you need to annotate it. Annotations identify how each part of this class relates to an entry in the database. Room uses this information to generate code.
+
+- `@Entity(tableName = "word_table")`
+Each `@Entity` class represents an entity in a table. Annotate your class declaration to indicate that it's an entity. Specify the name of the table if you want it to be different from the name of the class.
+- `@PrimaryKey`
+Every entity needs a primary key. To keep things simple, each word acts as its own primary key.
+- `@NonNull`
+Denotes that a parameter, field, or method return value can never be null.
+- `@ColumnInfo(name = "word")`
+Specify the name of the column in the table if you want it to be different from the name of the member variable.
+- Every field that's stored in the database needs to be either public or have a "getter" method. This sample provides a `getWord()` method.
+
+You can find a complete list of annotations in the Room package summary reference.
+Update your Word class with annotations as shown in this code. If you type the annotations, Android Studio will auto-import.
+```Java
+@Entity(tableName = "word_table")
+public class Word {
+
+   @PrimaryKey
+   @NonNull
+   @ColumnInfo(name = "word")
+   private String mWord;
+
+   public Word(String word) {this.mWord = word;}
+
+   public String getWord(){return this.mWord;}
+}
+```
+> Tip: You can autogenerate unique keys by annotating the primary key as follows:
+```Java
+@Entity(tableName = "word_table")
+public class Word {
+
+@PrimaryKey(autoGenerate = true)
+private int id;
+
+@NonNull
+private String word;
+//..other fields, getters, setters
+}
+```
