@@ -86,7 +86,7 @@ The data for this app is words, and each ` word ` is an Entity. Create a class c
 ![alt text](https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/4286f79b23797413.png)
 
 Here is the code:
-```
+```Java
 public class Word {
 
    private String mWord;
