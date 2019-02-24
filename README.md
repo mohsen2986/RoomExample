@@ -148,17 +148,17 @@ By default, all queries must be executed on a separate thread.
 Room uses the DAO to create a clean API for your code.
 ###### Implement the DAO
 The DAO for this codelab is basic and provides queries for getting all the words, inserting a word, and deleting all the words.
-1.Create a new Interface and call it WordDao.
+1.Create a new Interface and call it `WordDao`.
       
-2.Annotate the class with @Dao to identify it as a DAO class for Room.
+2.Annotate the class with `@Dao` to identify it as a DAO class for Room.
       
-3.Declare a method to insert one word: void insert(Word word);
+3.Declare a method to insert one word: `void insert(Word word);`
       
-4.Annotate the method with @Insert. You don't have to provide any SQL! (There are also @Delete and @Update annotations for          deleting and updating a row, but you are not using them in this app.)
+4.Annotate the method with `@Insert`. You don't have to provide any SQL! (There are also `@Delete` and `@Update` annotations for          deleting and updating a row, but you are not using them in this app.)
       
-5.Declare a method to delete all the words: void deleteAll();
+5.Declare a method to delete all the words: void `deleteAll();`
       
-6.There is no convenience annotation for deleting multiple entities, so annotate the method with the generic @Query.
+6.There is no convenience annotation for deleting multiple entities, so annotate the method with the generic `@Query`.
       
 7.Provide the SQL query as a string parameter to @Query. Use @Query for read and complicated queries and provide SQL.
 @Query("DELETE FROM word_table")
