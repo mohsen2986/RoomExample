@@ -44,7 +44,7 @@ This codelab provides all the code you need to build the complete app.
 
 ![alt text](https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/3840395bfb3980b8.png)
 
-## Create your app
+## 1 Create your app
 
 -Call the app RoomWordSample
 -Target SDK 26+
@@ -52,7 +52,7 @@ This codelab provides all the code you need to build the complete app.
 -Check Phone & Tablet form factor only and minimum SDK API 26.
 -Choose the Basic Activity.
 
-## Update gradle files
+## 2 Update gradle files
 
 You have to add the component libraries to your gradle files.
 
@@ -79,7 +79,7 @@ ext {
 }
 ```
 
-## Create the entity
+## 3 Create the entity
 
 The data for this app is words, and each ` word ` is an Entity. Create a class called Word that describes a word Entity. You need a constructor and a "getter" method for the data model class, because that's how `Room` knows to instantiate your objects.
 
@@ -137,3 +137,15 @@ private String word;
 //..other fields, getters, setters
 }
 ```
+## 4 Create the DAO
+
+###### What is the DAO?
+In the DAO (data access object), you specify SQL queries and associate them with method calls. The compiler checks the SQL and generates queries from convenience annotations for common queries, such as `@Insert`.
+The DAO must be an interface or abstract class.
+
+By default, all queries must be executed on a separate thread.
+
+Room uses the DAO to create a clean API for your code.
+###### Implement the DAO
+The DAO for this codelab is basic and provides queries for getting all the words, inserting a word, and deleting all the words.
+      1.Create a new Interface and call it WordDao.
