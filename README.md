@@ -149,3 +149,31 @@ Room uses the DAO to create a clean API for your code.
 ###### Implement the DAO
 The DAO for this codelab is basic and provides queries for getting all the words, inserting a word, and deleting all the words.
       1.Create a new Interface and call it WordDao.
+      2.Annotate the class with @Dao to identify it as a DAO class for Room.
+      3.Declare a method to insert one word: void insert(Word word);
+      4.Annotate the method with @Insert. You don't have to provide any SQL! (There are also @Delete and @Update annotations for          deleting and updating a row, but you are not using them in this app.)
+      5.Declare a method to delete all the words: void deleteAll();
+      6.There is no convenience annotation for deleting multiple entities, so annotate the method with the generic @Query.
+      7.Provide the SQL query as a string parameter to @Query. Use @Query for read and complicated queries and provide SQL.
+@Query("DELETE FROM word_table")
+      8.Create a method to get all the words: getAllWords();
+      Have the method return a List of Words.
+List<Word> getAllWords();
+      9.Annotate the method with the SQL query: 
+@Query("SELECT * from word_table ORDER BY word ASC")
+   
+Here is the completed code:
+@Dao
+public interface WordDao {
+
+   @Insert
+   void insert(Word word);
+
+   @Query("DELETE FROM word_table")
+   void deleteAll();
+
+   @Query("SELECT * from word_table ORDER BY word ASC")
+   List<Word> getAllWords();
+}
+   
+>Tip: For this app, ordering the words is not strictly necessary. However, by default, order is not guaranteed, and ordering makes testing straightforward.
