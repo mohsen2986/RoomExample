@@ -172,6 +172,7 @@ List<Word> getAllWords();
 @Query("SELECT * from word_table ORDER BY word ASC")
    
 Here is the completed code:
+```Java
 @Dao
 public interface WordDao {
 
@@ -184,5 +185,24 @@ public interface WordDao {
    @Query("SELECT * from word_table ORDER BY word ASC")
    List<Word> getAllWords();
 }
-   
+   ```
 >Tip: For this app, ordering the words is not strictly necessary. However, by default, order is not guaranteed, and ordering makes testing straightforward.
+>Tip: When inserting data, you can provide a conflict strategy.
+>In this codelab, you do not need a conflict strategy, because the word is your primary key, and the default SQL behavior is ABORT, so that you cannot insert two items with the same primary key into the database.
+>If the table has more than one column, you can use
+
+@Insert(onConflict = OnConflictStrategy.REPLACE)
+
+to replace a row.
+
+## 5. The LiveData class
+When data changes you usually want to take some action, such as displaying the updated data in the UI. This means you have to observe the data so that when it changes, you can react. Depending on how the data is stored, this can be tricky. Observing changes to data across multiple components of your app can create explicit, rigid dependency paths between the components. This makes testing and debugging difficult, among other things.
+
+LiveData, a lifecycle library class for data observation, solves this problem. Use a return value of type LiveData in your method description, and Room generates all necessary code to update the LiveData when the database is updated.
+
+>If you use LiveData independently from Room, you have to manage updating the data. LiveData has no publicly available methods to update the stored data.
+
+>If you, the developer, want to update the stored data, you must use MutableLiveData instead of LiveData. The MutableLiveData class has two public methods that allow you to set the value of a LiveData object, setValue(T) and postValue(T). Usually, MutableLiveData is used in the ViewModel, and then the ViewModel only exposes immutable LiveData objects to the observers.
+
+In WordDao, change the getAllWords() method signature so that the returned List<Word> is wrapped with LiveData.
+   
